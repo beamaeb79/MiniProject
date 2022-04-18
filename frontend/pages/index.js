@@ -18,7 +18,7 @@ export default function Home({ token }) {
               <img src="https://www.purinaone.co.th/assets/img/ydm/product5.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
               <a> เพียวริน่า วัน <br></br>
 
-                อาหารแมวชนิดเม็ด เกรดซุปเปอร์พรีเมี่ยม <br></br> <br></br>
+                อาหารแมวชนิดเม็ดเกรดซุปเปอร์พรีเมี่ยม <br></br> 
 
                 สำหรับลูกแมว อายุ 3 สัปดาห์ - 1 ปี ทุกสายพันธุ์<br></br>
 

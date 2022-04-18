@@ -1,58 +1,68 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Navbar from '../components/navbar'
-import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
-import axios from 'axios'
-import withAuth from '../components/withAuth'
-import config from '../config/config'
 
-const Profile1 = ({ token }) => {
+export default function Home({ token }) {
 
-    const [user, setUser] = useState({})
+  return (
+    <Layout>
+      <Head>
+        <title>First Page</title>
+      </Head>
+      <div className="w-screen h-screen bg-stone-200 border-2 flex flex-col items-center">
+        <Navbar />
+        <div className=" flex flex-row items-center " >
+          <div class="flex flex-row justify-center border-2 ">
+            <div class="w-6/12 sm:w-4/12 px-4">
+              <img src="https://www.purinaone.co.th/assets/img/ydm/product5.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
+              <a> เพียวริน่า วัน <br></br>
 
-    useEffect(() => {
-        profileUser()
-    }, [])
+                อาหารแมวชนิดเม็ดเกรดซุปเปอร์พรีเมี่ยม <br></br> 
 
-    const profileUser = async () => {
-        try {
-            // console.log('token: ', token)
-            const users = await axios.get(`${config.URL}/profile`, {
-                headers: { Authorization: `Bearer ${token}` }
-            })
-            // console.log('user: ', users.data)
-            setUser(users.data)
-        }
-        catch (e) {
-            console.log(e)
-        }
+                สำหรับลูกแมว อายุ 3 สัปดาห์ - 1 ปี ทุกสายพันธุ์<br></br>
 
-    }
- 
-    return (
-        <Layout>
-            <Head>
-                <title>User profile</title>
-            </Head>
-            <div className={styles.container}>
-                <Navbar />
-                <h1>User profile</h1>
-                <div>
-                    <b>Token:</b> {token.substring(0, 15)}... <br /><br />
-                    This route is protected by token, user is required to login first.
-                    <br/>
-                    Otherwise, it will be redirect to Login page
-                    <br/><br/>
-                    {JSON.stringify(user)}
-                </div>
+                
+              </a>
             </div>
-        </Layout>
-    )
+          </div>
+
+          <div class="flex flex-row justify-center border-2">
+            <div class="w-6/12 sm:w-4/12 px-4">
+              <img src="https://www.purinaone.co.th/assets/img/ydm/product1.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
+              <a>
+                เพียวริน่า วัน เท็นเดอร์ ซีเล็กซ์ เบลนด์ สูตรปลาแซลมอน <br></br>
+
+                อาหารแมวชนิดเม็ด เกรดซุปเปอร์พรีเมี่ยม <br></br>
+
+                สำหรับแมว อายุ 1 ปีขึ้นไป <br></br>
+
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-center border-2">
+            <div class="w-6/12 sm:w-4/12 px-4">
+              <img src="https://www.purinaone.co.th/assets/img/ydm/product5.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
+              <a>
+                เพียวริน่า วัน <br></br>
+
+                อาหารแมวชนิดเม็ด  <br></br>
+
+                สำหรับแมวเลี้ยงในบ้าน อายุ 1 ปีขึ้นไป <br></br>
+ 
+              
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
-export default withAuth(Profile1)
-
 export function getServerSideProps({ req, res }) {
-    return { props: { token: req.cookies.token || "" } };
+  // console.log("token from cookie: ",cookie.get("token")) 
+  // console.log('req: ', req.headers)
+  return { props: { token: req.cookies.token || "" } };
 }

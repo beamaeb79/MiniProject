@@ -14,45 +14,27 @@ export default function Home({ token }) {
         <Navbar />
         <div className=" flex flex-row items-center " >
           <div class="flex flex-row justify-center border-2 ">
-            <div class="w-6/12 sm:w-4/12 px-4">
-              <img src="https://www.purinaone.co.th/assets/img/ydm/product5.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
-              <a> เพียวริน่า วัน <br></br>
-
-                อาหารแมวชนิดเม็ดเกรดซุปเปอร์พรีเมี่ยม <br></br> 
-
-                สำหรับลูกแมว อายุ 3 สัปดาห์ - 1 ปี ทุกสายพันธุ์<br></br>
-
-                
-              </a>
+            <div class="w-6/12 sm:w-4/12 px-4 ">
+            <a class="text-2xl text-red-600">KANIVA</a><br></br>
+            <a class="text-xl">Kanivaมีทั้งหมด 3 สูตร</a>
+            
             </div>
+            <ul class="list-disc">
+  <li>ต้องบอกว่าสำหรับทาสแมวนอกจากต้องดูแลทำความสะอาดที่จะต้องมีห้องน้ำแมวหรืออุปกรณ์ต่างๆ แต่วันนี้สาระทีมจะมาแนะนำอาหารแมวยอดฮิตกินแล้ว</li><br></br>
+    <li>สุขภาพดี ขนไม่ร่วง ขนนุ่ม ฟู สวยงาม เรามาดูกันว่ามีอะไรบ้าง</li>
+
+</ul>
           </div>
 
           <div class="flex flex-row justify-center border-2">
             <div class="w-6/12 sm:w-4/12 px-4">
-              <img src="https://www.purinaone.co.th/assets/img/ydm/product1.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
-              <a>
-                เพียวริน่า วัน เท็นเดอร์ ซีเล็กซ์ เบลนด์ สูตรปลาแซลมอน <br></br>
-
-                อาหารแมวชนิดเม็ด เกรดซุปเปอร์พรีเมี่ยม <br></br>
-
-                สำหรับแมว อายุ 1 ปีขึ้นไป <br></br>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="flex flex-row justify-center border-2">
-            <div class="w-6/12 sm:w-4/12 px-4">
-              <img src="https://www.purinaone.co.th/assets/img/ydm/product5.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
-              <a>
-                เพียวริน่า วัน <br></br>
-
-                อาหารแมวชนิดเม็ด  <br></br>
-
-                สำหรับแมวเลี้ยงในบ้าน อายุ 1 ปีขึ้นไป <br></br>
- 
               
-              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-center border-2">
+            <div class="w-6/12 sm:w-4/12 px-4">
+            
             </div>
           </div>
         </div>

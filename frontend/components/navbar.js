@@ -5,10 +5,10 @@ import Link from 'next/link'
 const Navbar = () => (
   <nav class="w-screen bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <img class="sm:w-1/12 sm:h-1/12" blur-sm src="https://cdn-icons.flaticon.com/png/512/1067/premium/1067911.png?token=exp=1650303363~hmac=89b7299c10f36aaf1e2e3a1440926c44" />
+      <img class="sm:w-1/12 sm:h-1/12" blur-sm src="https://www.flaticon.com/premium-icon/cat_1650555" />
       <a href="https://flowbite.com" class="flex items-center">
 
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">DINO CAT</span>
+        <span class="selt-right text-xl font-semibold whitespace-nowrap dark:text-white">DINO CAT</span>
       </a>
       <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -18,10 +18,10 @@ const Navbar = () => (
       <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <a href="/" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+            <a href="/" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="/product" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</a>
+            <a href="/product" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" >Product</a>
           </li>
           <li>
             <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Order</a>

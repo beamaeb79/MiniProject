@@ -87,9 +87,9 @@ export default function Register({ token }) {
         <div class="H-20 w-30 rounded overflow-hidden shadow-lg">
           <form class="dark:bg-gray-800 shadow-md rounded px-10 pt-15 pb-8 mb-15 ">
             <p class="text-slate-200 pt-5">Create Account</p>
-            <p class="text-slate-200 mb-2">Status: {status}</p>
+            
             <div class="mb-4">{registerForm()}</div>
-
+            <p class="text-slate-200 mb-2">Status: {status}</p>
             <div class="flex items-center justify-between">
               <button
                 class="bg-white  text-black-200 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

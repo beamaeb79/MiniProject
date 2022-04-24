@@ -1,4 +1,3 @@
-// หากเข้าที่ /foo โดยที่ยังไม่ Login จะ Redirect ไปให้ Login ก่อน แต่ถ้า Login แล้ว ก็จะแสดงข้อความคำว่า  Foo  
 
 import Head from 'next/head'
 import Layout from '../components/layout'

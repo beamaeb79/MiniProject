@@ -6,11 +6,53 @@ import Image from "next/image";
 export default function Home({ token }) {
   return (
     <Layout>
+      
       <Navbar />
+
+      <div class="container mx-auto h-screen">
+      <div class="text-center px-3 lg:px-0">
+        <h1
+          class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight"
+        >
+          Main Hero Message to sell yourself!
+        </h1>
+        <p
+          class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8"
+        >
+          Sub-hero message, not too long and not too short. Make it just right!
+        </p>
+
+        <button
+          class="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48"
+        >
+          Sign Up
+        </button>
+        <a
+          href="#"
+          class="inline-block mx-auto lg:mx-0 hover:underline bg-transparent text-gray-600 font-extrabold my-2 md:my-6 py-2 lg:py-4 px-8"
+          >View Additional Action</a
+        >
+      </div>
+
+      <div class="flex items-center w-full mx-auto content-end">
+        <div
+          class="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl"
+        ></div>
+      </div>
+    </div>
+
+
+
 
       <div class="justify-center flex flex-row mt-10">
         <div class="basis-1/4">
-          <img src="https://www.feedmeplease.com/images/pdimg/3747/1.jpg" />
+        <Image
+                className={styles.immage}
+                src="/1.jpg"
+                alt="my picture"
+                width={500}
+                height={500}
+              />
           <div class="text-center">
             <p class="r mt-4 text-gray-700">
               เพียวริน่า วันอาหารแมวชนิดเม็ด เกรดซุปเปอร์พรีเมี่ยม<br></br>
@@ -24,9 +66,13 @@ export default function Home({ token }) {
           </div>
         </div>
         <div class="basis-1/4">
-          <div class="w-200 h-200">
-            <img src="https://www.feedmeplease.com/images/pdimg/3626/1.jpg" />
-          </div>
+        <Image
+                className={styles.immage}
+                src="/2.jpg"
+                alt="my picture"
+                width={500}
+                height={500}
+              />
           <div class="text-center">
             <p class="r mt-4 text-gray-700">
               เพียวริน่า วันอาหารแมวชนิดเม็ด เกรดซุปเปอร์พรีเมี่ยม<br></br>
@@ -42,7 +88,13 @@ export default function Home({ token }) {
         </div>
         <div class="basis-1/4 ">
 
-          <img src="https://www.feedmeplease.com/images/pdimg/2728/1.jpg" />
+        <Image
+                className={styles.immage}
+                src="/3.jpg"
+                alt="my picture"
+                width={500}
+                height={500}
+              />
           <div class="text-center">
             <p class="r mt-4 text-gray-700">
               เพียวริน่า วันอาหารแมวชนิดเม็ด เกรดซุปเปอร์พรีเมี่ยม<br></br>
@@ -55,35 +107,7 @@ export default function Home({ token }) {
           </div>
         </div>
       </div>
-      {/* <div className="w-screen h-screen bg-stone-200 border-2 flex flex-col items-center">
-        
-        <div className=" flex flex-row items-center " >
-          <div class="flex flex-row justify-center border-2 ">
-            <div class="w-6/12 sm:w-4/12 px-4 ">
-            <a class="text-2xl text-red-600">KANIVA</a><br></br>
-            <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-        <img src="https://backend.tops.co.th/media/catalog/product/8/8/8850127004908_14-03-2022.jpg" class="w-full w-full object-center object-cover group-hover:opacity-75" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." />
-    </div>
-            <a class="text-xl">Kanivaมีทั้งหมด 3 สูตร</a>
-            
-            </div>
-            <ul class="list-disc">
-  <li>ต้องบอกว่าสำหรับทาสแมวนอกจากต้องดูแลทำความสะอาดที่จะต้องมีห้องน้ำแมวหรืออุปกรณ์ต่างๆ แต่วันนี้สาระทีมจะมาแนะนำอาหารแมวยอดฮิตกินแล้ว</li>
-    <li>สุขภาพดี ขนไม่ร่วง ขนนุ่ม ฟู สวยงาม เรามาดูกันว่ามีอะไรบ้าง</li>
-</ul>
-          </div>
-          <div class="flex flex-row justify-center border-2">
-            <div class="w-6/12 sm:w-4/12 px-4">
-              
-            </div>
-          </div>
-          <div class="flex flex-row justify-center border-2">
-            <div class="w-6/12 sm:w-4/12 px-4">
-            
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
     </Layout>
   );
 }

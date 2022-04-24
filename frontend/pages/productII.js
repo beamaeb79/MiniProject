@@ -62,7 +62,8 @@ const Products = ({ token }) => {
             สินค้า: {item.name} <br></br>
             จำนวน: {item.numberproduct}
           </div>
-          <br></br> <br></br>
+          <br></br> 
+          <br></br>
           <div class="text-center ">
             <button
               class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"

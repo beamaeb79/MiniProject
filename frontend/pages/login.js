@@ -36,38 +36,105 @@ export default function Login({ token }) {
     });
 
   const loginForm = () => (
-    <div>
-      <div>
-        <div>
-          <label
-            class="block text-slate-200  text-sm font-sold mb-2 pt-4"
-            for="username"
-          >
-            Username
-          </label>
+    // <div>
+    //   <div>
+    //     <div>
+    //       <label
+    //         class="block text-slate-200  text-sm font-sold mb-2 pt-4"
+    //         for="username"
+    //       >
+    //         Username
+    //       </label>
 
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Username"
-            onChange={(e) => setUsername(e.target.value)}
-          ></input>
-        </div>
-        <div>
-          <label
-            class="block text-slate-200 text-sm font-sold mb-2"
-            for="password"
-          >
-            Password
-          </label>
-          <input
-            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-            onChange={(e) => setPassword(e.target.value)}
-            id="password"
-            type="password"
-            placeholder="******************"
-          ></input>
+    //       <input
+    //         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    //         id="username"
+    //         type="text"
+    //         placeholder="Username"
+    //         onChange={(e) => setUsername(e.target.value)}
+    //       ></input>
+    //     </div>
+    //     <div>
+    //       <label
+    //         class="block text-slate-200 text-sm font-sold mb-2"
+    //         for="password"
+    //       >
+    //         Password
+    //       </label>
+    //       <input
+    //         class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+    //         onChange={(e) => setPassword(e.target.value)}
+    //         id="password"
+    //         type="password"
+    //         placeholder="******************"
+    //       ></input>
+    //     </div>
+    //   </div>
+    // </div>
+    <div class="flex justify-center ... mt-10">
+      <div class="H-20 w-30 rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+          <div class="px-6 pt-4 pb-2">
+            <div class="w-42 H-20 ">
+              <p class="text-gray-700 text-base font-bold text-center mb-2">
+                Log in
+              </p>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username"
+                type="text"
+                placeholder="username"
+                onChange={(e) => setUsername(e.target.value)}
+              ></input>
+
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="Password"
+                type="Password"
+                placeholder="password"
+                onChange={(e) => setPassword(e.target.value)}
+              ></input>
+              {/* <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                onChange={(e) => setPassword(e.target.value)}
+                id="password"
+                type="password"
+                placeholder="******************"
+              ></input> */}
+              <br></br>
+              <br></br>
+              <input
+                type="checkbox"
+                name="IsRememberMe"
+                onChange={(e) => setRemember(e.target.value)}
+              /> Remember me!
+              <br></br>
+              <p class="text-gray-700 mb-">
+                check: {ischeck} <br></br>
+                Status: {status}
+                {/* <p class=" text-gray-700  mb-">Status: {status}</p> */}
+              </p>
+
+            </div>
+            <br></br>
+
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
+                type="button"
+                onClick={login}
+              >
+                LOGIN
+              </button>
+              <button
+                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3" type="button"
+                onClick={() => rergisform()}
+              >
+                SIGN UP
+              </button>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -77,18 +144,18 @@ export default function Login({ token }) {
     <Layout>
       <Navbar />
 
-      <div class=" flex justify-center mt-20">
-        <div class="H-20 w-30 rounded overflow-hidden shadow-lg">
-          <form class="dark:bg-gray-800 shadow-md rounded px-10 pt-15 pb-8 mb-15 ">
-            <div class="mb-4">{loginForm()}</div>
-            <div class="mb-6">
-              <p class="text-slate-200">
-                check: {ischeck}
-                <br></br>
-              </p>
-              {status}
-
-              <div>
+      {/* <div class="flex justify-center ... mt-10"> */}
+      {/* <div class="H-20 w-30 rounded overflow-hidden shadow-lg"> */}
+      <form class="px-6 pt-4 pb-2">
+        <div class="mb-4">{loginForm()}</div>
+        <div class="mb-6">
+          {/* <p class="text-gray-700 mb-">
+            check: {ischeck}
+            <br></br>
+          </p> */}
+          {/* {status} */}
+          {/* 
+               <div>
                 <input
                   type="checkbox"
                   name="IsRememberMe"
@@ -111,11 +178,11 @@ export default function Login({ token }) {
                 onClick={() => rergisform()}
               >
                 Register
-              </button>
-            </div>
-          </form>
+              </button>  */}
         </div>
-      </div>
+      </form>
+      {/* </div> */}
+      {/*  </div> */}
     </Layout>
   );
 }

@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt')
 let users = {
     users: [
         { id: 1, username: 'pang', password: '$2b$10$0AsMSQaUB0AlLnKzgeUOfOE.hWUodtuR4NOU954XLVy2gy3lBWsdO', email: 'pang@gmail.com', ischeck: 'No' },
-        { id: 2, username: 'pang', password: '$2b$10$1Bu4tImM/Ms9rtU.8/n/COWpzUAGFB6YlsO5xZqFih1JUxafyFFXa', email: 'pa@gmail.com', ischeck: 'No' },
+        { id: 2, username: 'pawinee', password: '$2b$10$1Bu4tImM/Ms9rtU.8/n/COWpzUAGFB6YlsO5xZqFih1JUxafyFFXa', email: 'pa@gmail.com', ischeck: 'No' },
     ]
 }
 

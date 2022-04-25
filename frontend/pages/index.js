@@ -290,6 +290,120 @@ export default function Home({ token }) {
               </div> */}
             </div>
           </div>
+
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div
+              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+            >
+              <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
+                  GETTING STARTED
+                </p>
+                <div class="w-full font-bold text-xl text-gray-800 px-6">
+                  Purina ONE® True Instinct Chicken & Turkey Recipe in Gravy Wet Cat Food
+                </div>
+                <p class=" text-gray-600 text-base px-6 mb-5">
+                  This high-protein recipe with real chicken and turkey provides the texture variety cats seek in nature.
+
+                  Did you know that feeding wet cat food can be an important part of your daily routine to promote your cat’s lifelong whole body health? In fact, veterinarians recommend wet food as a healthy way to care for your cat.
+
+                  Purina ONE cat nutritionists have done the research to ensure that our line of wet foods provides a purposeful balance of what cats need for lifelong whole body health, including protein-rich nutrition and moisture for hydration                </p>
+                <Image
+                  className={styles.immage}
+                  src="/7.jpg"
+                  alt="my picture"
+                  width={300}
+                  height={350}
+                />
+              </a>
+            </div>
+            <div
+              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+            >
+              {/* <div class="flex items-center justify-start">
+                <button
+                  class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+                >
+                  Add
+                </button>
+              </div> */}
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div
+              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+            >
+              <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
+                  GETTING STARTED
+                </p>
+                <div class="w-full font-bold text-xl text-gray-800 px-6">
+                  Purina ONE® True Instinct Chicken Wet Cat Food Recipe in Gravy
+                </div>
+                <p class=" text-gray-600 text-base px-6 mb-5">
+                  This high-protein recipe with real chicken provides the texture variety cats seek in nature.
+
+                  Did you know that feeding wet cat food can be an important part of your daily routine to promote your cat’s lifelong whole body health? In fact, veterinarians recommend wet food as a healthy way to care for your cat.
+
+                  Purina ONE cat nutritionists have done the research to ensure that our line of wet foods provides a purposeful balance of what cats need for lifelong whole body health, including protein-rich nutrition and moisture for hydration. </p>
+                <Image
+                  className={styles.immage}
+                  src="/8.jpg"
+                  alt="my picture"
+                  width={300}
+                  height={350}
+                />
+              </a>
+            </div>
+            <div
+              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+            >
+              {/* <div class="flex items-center justify-start">
+                <button
+                  class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+                >
+                  Add
+                </button>
+              </div> */}
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div
+              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+            >
+              <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
+                  GETTING STARTED
+                </p>
+                <div class="w-full font-bold text-xl text-gray-800 px-6">
+                  Purina ONE® True Instinct Chicken & Salmon Recipe in Sauce Wet Cat Food
+                </div>
+                <p class=" text-gray-600 text-base px-6 mb-5">
+                  This high-protein recipe with real chicken and salmon provides the texture variety cats seek in nature. Did you know that feeding wet cat food can be an important part of your daily routine to promote your cat’s lifelong whole body health? In fact, veterinarians recommend wet food as a healthy way to care for your cat. Purina ONE cat nutritionists have done the research to ensure that our line of wet foods provides a purposeful balance of what cats need for lifelong whole body health, including protein-rich nutrition and moisture for hydration. </p>
+                <Image
+                  className={styles.immage}
+                  src="/9.jpg"
+                  alt="my picture"
+                  width={300}
+                  height={350}
+                />
+              </a>
+            </div>
+            <div
+              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+            >
+              {/* <div class="flex items-center justify-start">
+                <button
+                  class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+                >
+                  Add
+                </button>
+              </div> */}
+            </div>
+          </div>
+
         </div>
       </section>
 

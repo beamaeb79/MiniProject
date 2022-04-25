@@ -36,40 +36,6 @@ export default function Register({ token }) {
   };
 
   const registerForm = () => (
-    // <div>
-    //   <div>
-    //     <div class="mb-2">
-    //       <input
-    //         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-    //         id="username"
-    //         type="text"
-    //         placeholder="username"
-    //         onChange={(e) => setUsername(e.target.value)}
-    //       />
-    //     </div>
-
-    //     <div class="mb-2">
-    //       <input
-    //         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-    //         id="email"
-    //         type="email"
-    //         placeholder="email"
-    //         onChange={(e) => setEmail(e.target.value)}
-    //       />
-    //     </div>
-
-    //     <div>
-    //       <input
-    //         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-    //         id="Password"
-    //         type="Password"
-    //         placeholder="password"
-    //         onChange={(e) => setPassword(e.target.value)}
-    //       />
-    //     </div>
-    //   </div>
-    // </div>
-
     <div class="flex justify-center ... mt-10">
       <div class="H-20 w-30 rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
@@ -104,27 +70,27 @@ export default function Register({ token }) {
               <br></br>
               <br></br>
               <p class=" text-gray-700  mb-">Status: {status}</p>
-              </div>
+            </div>
 
-              <br></br>
-              <br></br>
-              <div class="flex items-center justify-between">
-                
-                <button
-                  class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
-                  type="button"
-                  onClick={() => loginpage()}
-                >
-                  LOGIN
-                </button>
-                <button
-                  class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
-                  type="button"
-                  onClick={register}
-                >
-                  SIGN UP
-                </button>
-              </div>
+            <br></br>
+            <br></br>
+            <div class="flex items-center justify-between">
+
+              <button
+                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
+                type="button"
+                onClick={() => loginpage()}
+              >
+                LOGIN
+              </button>
+              <button
+                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
+                type="button"
+                onClick={register}
+              >
+                SIGN UP
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -132,7 +98,7 @@ export default function Register({ token }) {
 
   );
 
-  
+
   const loginpage = () =>
     Router.push({
       pathname: "/login",
@@ -141,34 +107,11 @@ export default function Register({ token }) {
   return (
     <Layout>
       <Navbar />
-
-      {/* <div class="flex justify-center ... mt-10"> */}
-      {/* <div class="H-20 w-30 rounded overflow-hidden shadow-lg"> */}
-        <form class="px-6 pt-4 pb-2 ">
-          {/* <p class="text-slate-200 pt-5">Create Account</p> */}
-          <div class="mb-4">{registerForm()}</div>
-          <div class="mb-6">
-          {/* <p class="text-slate-200 mb-2">Status: {status}</p> */}
-          {/* <div class="flex items-center justify-between">
-              <button
-                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
-                type="button"
-                onClick={() => loginpage()}
-              >
-                Sign In
-              </button>
-              <button
-                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-3"
-                type="button"
-                onClick={register}
-              >
-                Register
-              </button>
-            </div> */}
-          </div>
-        </form>
-      {/* </div> */}
-      {/* </div> */}
+      <form class="px-6 pt-4 pb-2 ">
+        <div class="mb-4">{registerForm()}</div>
+        <div class="mb-6">
+        </div>
+      </form>
     </Layout>
   );
 }

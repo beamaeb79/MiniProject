@@ -1,8 +1,6 @@
-import Head from "next/head";
 import Layout from "../components/layout";
 import { useState } from "react";
 import Navbar from "../components/navbar";
-import styles from "../styles/Home.module.css";
 import axios from "axios";
 import config from "../config/config";
 import Router from "next/router";
@@ -36,41 +34,6 @@ export default function Login({ token }) {
     });
 
   const loginForm = () => (
-    // <div>
-    //   <div>
-    //     <div>
-    //       <label
-    //         class="block text-slate-200  text-sm font-sold mb-2 pt-4"
-    //         for="username"
-    //       >
-    //         Username
-    //       </label>
-
-    //       <input
-    //         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-    //         id="username"
-    //         type="text"
-    //         placeholder="Username"
-    //         onChange={(e) => setUsername(e.target.value)}
-    //       ></input>
-    //     </div>
-    //     <div>
-    //       <label
-    //         class="block text-slate-200 text-sm font-sold mb-2"
-    //         for="password"
-    //       >
-    //         Password
-    //       </label>
-    //       <input
-    //         class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-    //         onChange={(e) => setPassword(e.target.value)}
-    //         id="password"
-    //         type="password"
-    //         placeholder="******************"
-    //       ></input>
-    //     </div>
-    //   </div>
-    // </div>
     <div class="flex justify-center ... mt-10">
       <div class="H-20 w-30 rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
@@ -94,13 +57,6 @@ export default function Login({ token }) {
                 placeholder="password"
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
-              {/* <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                onChange={(e) => setPassword(e.target.value)}
-                id="password"
-                type="password"
-                placeholder="******************"
-              ></input> */}
               <br></br>
               <br></br>
               <input
@@ -112,7 +68,6 @@ export default function Login({ token }) {
               <p class="text-gray-700 mb-">
                 check: {ischeck} <br></br>
                 Status: {status}
-                {/* <p class=" text-gray-700  mb-">Status: {status}</p> */}
               </p>
 
             </div>
@@ -143,46 +98,11 @@ export default function Login({ token }) {
   return (
     <Layout>
       <Navbar />
-
-      {/* <div class="flex justify-center ... mt-10"> */}
-      {/* <div class="H-20 w-30 rounded overflow-hidden shadow-lg"> */}
       <form class="px-6 pt-4 pb-2">
         <div class="mb-4">{loginForm()}</div>
         <div class="mb-6">
-          {/* <p class="text-gray-700 mb-">
-            check: {ischeck}
-            <br></br>
-          </p> */}
-          {/* {status} */}
-          {/* 
-               <div>
-                <input
-                  type="checkbox"
-                  name="IsRememberMe"
-                  onChange={(e) => setRemember(e.target.value)}
-                />
-                <p class="text-slate-200">Remember me!</p>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <button
-                class="bg-white  text-black-200 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-                onClick={login}
-              >
-                Sign In
-              </button>
-              <button
-                class="bg-white  text-black-200 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-                onClick={() => rergisform()}
-              >
-                Register
-              </button>  */}
         </div>
       </form>
-      {/* </div> */}
-      {/*  </div> */}
     </Layout>
   );
 }

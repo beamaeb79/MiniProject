@@ -56,7 +56,7 @@ export default function Home({ token }) {
                 </div>
                 <p class="text-gray-600 text-base px-6 mb-5">
                   Natural With Added Vitamins, Minerals & Nutrients
-                  Real Chicken 
+                  Real Chicken
                   High Protein Supports Kittens’ Growing Muscles
                   Supports Vision & Brain Development
                   Contains DHA, a Nutrient Found in Mothers’ Milk
@@ -74,13 +74,13 @@ export default function Home({ token }) {
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div class="flex items-center justify-start">
+              {/* <div class="flex items-center justify-start">
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
                 >
-                  Action
+                  Add
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -115,13 +115,13 @@ export default function Home({ token }) {
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div class="flex items-center justify-start">
+              {/* <div class="flex items-center justify-start">
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
                 >
-                  Action
+                  Add
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -156,13 +156,13 @@ export default function Home({ token }) {
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div class="flex items-center justify-start">
+              {/* <div class="flex items-center justify-start">
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
                 >
-                  Action
+                  Add
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -196,14 +196,14 @@ export default function Home({ token }) {
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              
-              <div class="flex items-center justify-start">
+
+              {/* <div class="flex items-center justify-start">
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
                 >
-                  Action
+                  Add
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -215,7 +215,8 @@ export default function Home({ token }) {
                 <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
                   GETTING STARTED
                 </p>
-                <div class="w-full font-bold text-xl text-gray-800 px-6">
+                <div class="w-full font-bold text-xl text-gray-800 px-6"
+                >
                   Purina ONE® +Plus Hairball Formula Dry Cat Food
                 </div>
                 <p class=" text-gray-600 text-base px-6 mb-5">
@@ -238,13 +239,14 @@ export default function Home({ token }) {
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div class="flex items-center justify-start">
+              {/* <div class="flex items-center justify-start">
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+                 
                 >
-                  Action
+                Add
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -280,13 +282,13 @@ export default function Home({ token }) {
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div class="flex items-center justify-start">
+              {/* <div class="flex items-center justify-start">
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
                 >
-                  Action
+                  Add
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -295,6 +297,7 @@ export default function Home({ token }) {
     </Layout>
   );
 }
+
 
 export function getServerSideProps({ req, res }) {
   // console.log("token from cookie: ",cookie.get("token"))

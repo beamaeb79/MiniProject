@@ -16,15 +16,19 @@ export default function Logout({ token }) {
 
     const logout = async () => {
         console.log('remove token: ', token)
+        localStorage.removeItem('accessToken')
         let result = await axios.get(`${config.URL}/logout`, { withCredentials: true })
         setStatus("Logout successful")
     }
- 
+
     return (
         <Layout>
-           <Navbar />
+            <Navbar />
+            <Head>
+                <title>User profile</title>
+            </Head>
             <div className={styles.container}>
-                
+
                 <h1>Logout</h1>
                 <div>
                     <h2> {status}  </h2>

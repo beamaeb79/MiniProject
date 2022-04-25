@@ -148,8 +148,8 @@ router.get(
 router.post("/register", async (req, res) => {
   try {
     const SALT_ROUND = 10;
-    const { name, surname, username, email, password } = req.body;
-    if (!name || !surname || !username || !email || !password)
+    const { username, email, password } = req.body;
+    if (!username || !email || !password)
       return res.json({ message: "Cannot register with empty string" });
     if (db.checkExistingUser(username) !== db.NOT_FOUND)
       return res.json({ message: "Duplicated user" });
@@ -182,7 +182,6 @@ app.use((err, req, res, next) => {
     },
   });
 });
-
 
 // Start Server
 app.listen(port, () => console.log(`Server is running on port ${port}`));

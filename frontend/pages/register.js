@@ -1,7 +1,5 @@
 import { useState } from "react";
-import Head from "next/head";
 import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar";
 import axios from "axios";
 import config from "../config/config";
@@ -24,8 +22,6 @@ export default function Register({ token }) {
   const register = async (req, res) => {
     try {
       let result = await axios.post(`${config.URL}/register`, {
-        name,
-        surname,
         username,
         email,
         password,
